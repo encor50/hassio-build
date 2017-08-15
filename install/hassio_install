@@ -65,7 +65,7 @@ case $ARCH in
         HOMEASSISTANT_DOCKER="$DOCKER_REPO/$MACHINE-homeassistant"
         HASSIO_DOCKER="$DOCKER_REPO/amd64-hassio-supervisor"
     ;;
-    "arm" | "armv7l")
+    "arm" | "armv6l")
         if [ -z $MACHINE ]; then
             echo "[ERROR] Please set machine for $ARCH"
             exit 1
